@@ -1,0 +1,480 @@
+E2F3
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM835826
+Study: 
+von Eyss B, Maaskola J, Memczak S, Möllmann K et al. The SNF2-like helicase HELLS mediates E2F3-dependent transcription and cellular transformation. EMBO J 2012 Feb 15;31(4):972-85.
+Mouse build:
+mm9
+
+Original file name:
+GSM835826_wt_e2f3_peaks.bed
+New file name:
+E2F3_MEF_peaks.bed
+Cell type:
+MEF: mouse embryonic fibroblasts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Egr1
+Number of experiments:
+4
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36099
+Study: 
+Garber M, Yosef N, Goren A, Raychowdhury R et al. A high-throughput chromatin immunoprecipitation approach reveals principles of dynamic gene regulation in mammals. Mol Cell 2012 Sep 14;47(5):810-22. 
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM881139_Egr1_0_peaks.txt
+New file name:
+Egr1_BMDC_Time0_peaks.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 2):
+GSM881139_Egr1_30_peaks.txt
+New file name:
+Egr1_BMDC_Time30_peaks.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 3):
+GSM881139_Egr1_60_peaks.txt
+New file name:
+Egr1_BMDC_Time60_peaks.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 4):
+GSM881139_Egr1_120_peaks.txt
+New file name:
+Egr1_BMDC_Time120_peaks.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Eomes
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1035388
+Study: 
+Chuong EB, Rumi MA, Soares MJ, Baker JC. Endogenous retroviruses function as species-specific enhancer elements in the placenta. Nat Genet 2013 
+Mouse build:
+mm9
+
+Original file name:
+GSM1035388_ts_eomes_peaks.bed
+New file name:
+Eomes_Tropho_peaks.bed
+Cell type:
+Trophoblast stem cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Foxa2
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE26729
+Study:
+Li Z, Schug J, Tuteja G, White P et al. The nucleosome map of the mammalian liver. Nat Struct Mol Biol 2011 Jun;18(6):742-6.
+Mouse build:
+mm8
+
+Original file name (file 1):
+GSM717562_FGC0050_s_3-ucsc.bed
+New file name:
+Foxa2_Liver4_peaks.bed
+Cell type:
+Hepatocytes
+
+Original file name (file 2):
+GSM717563_FGC0050_s_4-ucsc.bed
+New file name:
+Foxa2_Liver5_peaks.bed
+Cell type:
+Hepatocytes
+
+Note: processed data was not available (downloaded bed files were actually fastq files), so we aligned these reads and called the peaks as follows (e.g., Liver5):
+
+bowtie -m 1 -S -q mm9 Foxa2_Liver5_SRR191782.fastq Foxa2_Liver5_SRR191782.sam
+
+macs14 -t Foxa2_Liver5_SRR191782.sam -n Foxa2_Liver5_SRR191782 -g mm -B -S --call-subpeaks
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Foxa2
+Number of files:
+1
+Downloaded from:
+http://www.sciencedirect.com/science/article/pii/S0012160611012978
+(Table S8)
+Study:
+Tamplin OJ, Cox BJ, Rossant J Integrated microarray and ChIP analysis identifies multiple Foxa2 dependent target genes in the notochord. Developmental Biology 2011. 360: 415-425.
+Mouse build:
+mm9
+
+Original file name:
+mmc8.xls (only the seven lines indicated by "enhancer positive for notochord expression")
+New file name:
+Foxa2_enhancers.bed
+Original file name:
+mmc8.xls (all lines)
+New file name:
+Foxa2_predictedenhancers.bed
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gata3
+Number of files:
+10
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20898
+Study:
+Wei G, Abraham BJ, Yagi R, Jothi R et al. Genome-wide analyses of transcription factor GATA3-mediated gene regulation in distinct T cell types. Immunity 2011 Aug 26;35(2):299-311
+Mouse build:
+mm8
+
+Original file name (file 1):
+GSM523221_DN-GATA3.bsites.bedgraph
+New file name:
+Gata3_DN_peaks.bed
+Cell type:
+Double negative cells, strain C57BL/6
+
+Original file name (file 2):
+GSM523222_DP-GATA3.bsites.bedgraph
+New file name:
+Gata3_DP_peaks.bed
+Cell type:
+Double positive cells, strain C57BL/6
+
+Original file name (file 3):
+GSM523223_CD4-GATA3.bsites.bedgraph
+New file name:
+Gata3_CD4_peaks.bed
+Cell type:
+Naive CD4 cells, strain C57BL/6
+
+Original file name (file 4):
+GSM523224_CD8-GATA3.bsites.bedgraph
+New file name:
+Gata3_CD8_peaks.bed
+Cell type:
+CD8 cells, strain C57BL/6
+
+Original file name (file 5):
+GSM523225_Th1-GATA3.bsites.bedgraph
+New file name:
+Gata3_TH1_peaks.bed
+Cell type:
+T-helper 1 cells, strain C57BL/6
+
+Original file name (file 6):
+GSM523226_Th2-GATA3.bsites.bedgraph
+New file name:
+Gata3_TH2_peaks.bed
+Cell type:
+Unstimulated T-helper 2 cells
+
+Original file name (file 7):
+GSM523228_Th17-GATA3.bsites.bedgraph
+New file name:
+Gata3_TH17_peaks.bed
+Cell type:
+T-helper 17 cells
+
+Original file name (file 8):
+GSM523229_iTreg-GATA3.bsites.bedgraph
+New file name:
+Gata3_iTreg_peaks.bed
+Cell type:
+Inducible regulatory T cells
+
+Original file name (file 9):
+GSM523230_nTreg-GATA3.bsites.bedgraph
+New file name:
+Gata3_nTreg_peaks.bed
+Cell type:
+Naive regulatory T cells
+
+Original file name (file 10):
+GSM523231_NKT-GATA3.bsites.bedgraph
+New file name:
+Gata3_NKT_peaks.bed
+Cell type:
+Natural Killer T cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hnf4a
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE34566
+Study:
+Verzi MP, Shin H, San Roman AK, Liu XS et al. Intestinal master transcription factor CDX2 controls chromatin access for partner transcription factor binding. Mol Cell Biol 2013
+Mouse build: mm9
+
+Original file name (file 1):
+GSM851120.bed
+New file name:
+Hnf4a_WT_peaks.bed
+Cell type: WT mouse villus cells
+
+Original file name (file 2):
+GSM851121.bed
+New file name:
+Hnf4a_Cdx2KO_peaks.bed
+Cell type: Cdx2 KO mouse villus cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Irf3
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31796
+Study:
+Uhlenhaut NH, Barish GD, Yu RT, Downes M et al. Insights into negative regulation by the glucocorticoid receptor from genome-wide profiling of inflammatory cistromes. Mol Cell 2013
+Mouse build: mm9
+
+Original file name (file 1):
+GSM925279_IRF3_lps_peaks.txt
+New file name:
+Irf3_LPS_peaks.bed
+Cell type:
+primary bone marrow-derived macrophages (LPS-stimulated macrophages)
+
+Original file name (file 2):
+GSM925280_IRF3_dex_lps_peaks.txt
+New file name:
+Irf3_LPSdex_peaks.bed
+Cell type:
+primary bone marrow-derived macrophages(Dexamethasone treated, LPS-stimulated macrophages)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Irf4
+Number of files:
+4
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36099
+Study: 
+Garber M, Yosef N, Goren A, Raychowdhury R et al. A high-throughput chromatin immunoprecipitation approach reveals principles of dynamic gene regulation in mammals. Mol Cell 2012 Sep 14;47(5):810-22. 
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM881147_Irf4_0_peaks.txt
+New file name:
+Irf4_BMDC_Time0.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 2):
+GSM881149_Irf4_30_peaks.txt
+New file name:
+Irf4_BMDC_Time30.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 3):
+GSM881150_Irf4_60_peaks.txt
+New file name:
+Irf4_BMDC_Time60.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+Original file name (experiment 4):
+GSM881148_Irf4_120_peaks.txt
+New file name:
+Irf4_BMDC_Time120.bed
+Cell type:
+BMDC: bone marrow-derived dendritic cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Mafk
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36030
+Study:
+Mouse ENCODE Consortium, Stamatoyannopoulos J, Snyder M, Hardison R, Ren B, et al. (2012) An encyclopedia of mouse DNA elements (Mouse ENCODE). Genome Biology 13: 418.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM912898_mm9_wgEncodeSydhTfbsCh12Mafkab50322IggrabPk.narrowPeak
+New file name:
+Mafk_CH12_peaks.bed
+Cell type:
+CH12
+
+Original file name (experiment 2):
+GSM912899_mm9_wgEncodeSydhTfbsMelMafkab50322IggrabPk.narrowPeak
+New file name:
+Mafk_MEL_peaks.bed
+Cell type:
+MEL
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Max
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36030
+Study:
+Mouse ENCODE Consortium, Stamatoyannopoulos J, Snyder M, Hardison R, Ren B, et al. (2012) An encyclopedia of mouse DNA elements (Mouse ENCODE). Genome Biology 13: 418.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM912908_mm9_wgEncodeSydhTfbsCh12MaxIggrabPk.narrowPeak
+New file name:
+Max_CH12_peaks.bed
+Cell type:
+CH12
+
+Original file name (experiment 2):
+GSM912919_mm9_wgEncodeSydhTfbsMelMaxIggrabPk.narrowPeak
+New file name:
+Max_MEL_peaks.bed
+Cell type:
+MEL
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Smad3
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36673
+Study: 
+Estarás C, Akizu N, García A, Beltrán S et al. Genome-wide analysis reveals that Smad3 and JMJD3 HDM co-activate the neural developmental program. Development 2012 Aug;139(15):2681-91
+Mouse build:
+mm9
+
+Original file name:
+GSM898371_plusTGFb_Smad3.tss.bed_anno_TSSall.bed
+New file name:
+Smad3_NSC_peaks.bed
+Cell type:
+Neural stem cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Sox17
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43275
+Study: 
+Aksoy I, Jauch R, Chen J, Dyla M et al. Oct4 switches partnering from Sox2 to Sox17 to reinterpret the enhancer code and specify endoderm. EMBO J 2013 Apr 3;32(7):938-53.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM1059856_CME151_peaks.txt
+New file name:
+Sox17_ES_A_peaks.bed
+Cell type:
+KH2 ES cells
+
+Original file name (experiment 2):
+GSM1059857_CME195_peaks.txt
+New file name:
+Sox17_ES_B_peaks.bed
+Cell type:
+KH2 ES cells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Srf
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36024
+Study:
+Mouse ENCODE Consortium, Stamatoyannopoulos J, Snyder M, Hardison R, Ren B, et al. (2012) An encyclopedia of mouse DNA elements (Mouse ENCODE). Genome Biology 13: 418.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM915168_mm9_wgEncodeCaltechTfbsC2c12SrfFCntrl32bE2p24hPcr2xPkRep1.narrowPeak
+New file name:
+Srf_C2C12_peaks.bed
+Cell type:
+C2C12
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tbp
+Number of files:
+2
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36030
+Study:
+Mouse ENCODE Consortium, Stamatoyannopoulos J, Snyder M, Hardison R, Ren B, et al. (2012) An encyclopedia of mouse DNA elements (Mouse ENCODE). Genome Biology 13: 418.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM912900_mm9_wgEncodeSydhTfbsCh12TbpIggmusPk.narrowPeak
+New file name:
+Tbp_CH12_peaks.bed
+Cell type:
+CH12
+
+Original file name (experiment 2):
+GSM912913_mm9_wgEncodeSydhTfbsMelTbpIggmusPk.narrowPeak
+New file name:
+Tbp_MEL_peaks.bed
+Cell type:
+MEL
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tcf3
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36024
+Study:
+Mouse ENCODE Consortium, Stamatoyannopoulos J, Snyder M, Hardison R, Ren B, et al. (2012) An encyclopedia of mouse DNA elements (Mouse ENCODE). Genome Biology 13: 418.
+Mouse build:
+mm9
+
+Original file name (experiment 1):
+GSM915177_mm9_wgEncodeCaltechTfbsC2c12Tcf3FCntrl32bE2p5dPcr2xPkRep1.narrowPeak
+New file name:
+Tcf3_C2C12_peaks.bed
+Cell type:
+C2C12
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tcf7
+Number of files:
+1
+Downloaded from:
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31221
+Study: 
+Wu JQ, Seay M, Schulz VP, Hariharan M et al. Tcf7 is an important regulator of the switch of self-renewal and differentiation in a multipotential hematopoietic cell line. PLoS Genet 2012;8(3):e1002565. 
+Mouse build:
+mm9
+
+Original file name:
+GSE31221_TCF7_q001_ScoredFile.bed
+New file name:
+Tcf7_EML_peaks.bed
+Cell type:
+EML cells

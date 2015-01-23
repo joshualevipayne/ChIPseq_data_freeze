@@ -1,0 +1,12 @@
+Eomes_Tropho_peaks.fa.kmercounts.txt
+Gata3_TH17_peaks.fa.kmercounts.txt
+Irf3_LPS_peaks.fa.kmercounts.txt
+Irf3_LPSdex_peaks.fa.kmercounts.txt
+Smad3_NSC_peaks.fa.kmercounts.txt
+Sox17_ES_A_peaks.fa.kmercounts.txt
+Sox17_ES_B_peaks.fa.kmercounts.txt
+Srf_C2C12_peaks.fa.kmercounts.txt
+Tbp_CH12_peaks.fa.kmercounts.txt
+Tbp_MEL_peaks.fa.kmercounts.txt
+Tcf3_C2C12_peaks.fa.kmercounts.txt
+Tcf7_EML_peaks.fa.kmercounts.txt
